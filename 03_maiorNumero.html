@@ -7,11 +7,19 @@
     */
 
     //ENTRADA
-
+    let lista = [];
     
     //PROCESSAMENTO
+    for (let contador = 0; contador < 5; contador++) {
+        const numero = Number(prompt(`Informe o número ${contador + 1}:`));
+        lista.push(numero);
+    }
 
-    
+    lista.sort((a,b) => b-a);
+    const maior = lista[0];
+
+
     //SAÍDA
+    document.write(`Maior número: ${maior}`);
 
 </script>
