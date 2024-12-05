@@ -7,15 +7,20 @@
 
     //ENTRADA
     const numero = Number(prompt("Informe um número:"));
-    let primos = [];
+    let divisores = [];
 
     //PROCESSAMENTO
-    for (let contador = 1; contador < numero; contador++) {
+    for (let contador = 1; contador <= numero; contador++) {
         if (numero % contador === 0) {
-            primos.push(numero);
+            divisores.push(contador);
         } 
     }
 
     //SAÍDA
-
+    if (divisores.length === 2) {
+        document.write(`O número ${numero} é primo!`);
+    } else {
+        document.write(`O número ${numero} não é primo!`);
+    }
+    
 </script>

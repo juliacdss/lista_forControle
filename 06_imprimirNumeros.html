@@ -6,11 +6,24 @@
     */
 
     //ENTRADA
+    const inicial = Number(prompt("Informe um número inicial:"));
+    const final = Number(prompt("Informe um número final:"));
+    let pares = [];
+    let impares = [];
 
-    
     //PROCESSAMENTO
+    if (inicial < final) {
+        for (let contador = inicial + 1; contador < final; contador++) {
+            if (contador % 2 === 0) {
+                pares.push(contador);
+            } else {
+                impares.push(contador);
+            }
+        }
+        document.write(`Números pares que estão entre os números ${inicial} e ${final}: ${pares}<br>Números ímpares que estão entre os números ${inicial} e ${final}: ${impares}`);
+    } else {
+        alert("ERRO! Para a verificação, o número final deve ser maior que o inicial!");
+    }
 
-    
-    //SAÍDA
 
 </script>
