@@ -9,11 +9,9 @@
     let imprima = [];
 
     //PROCESSAMENTO
-    for (let contador = 1; contador <= 100; contador++) {
-        if (contador % 3 === 0) {
-            imprima.push(contador);
-            soma += contador;
-        }
+    for (let contador = 3; contador <= 100; contador+=3) {
+        imprima.push(contador);
+        soma += contador;
     }
 
     //SAÍDA
