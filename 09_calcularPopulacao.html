@@ -6,14 +6,21 @@
     */
 
     //ENTRADA
+    let populacao = 50000;
+    const taxaCrescimento = 1.015; 
+
     //PROCESSAMENTO
-    for (contador = 0; populacao = 50000; contador++) {
-        populacao *= 1.;
+    let populacao5 = populacao; 
+    let populacao10 = populacao;
+
+    for (let ano = 0; ano < 5; ano++) {
+        populacao5 *= taxaCrescimento;
     }
+    for (let ano = 0; ano < 10; ano++) {
+        populacao10 *= taxaCrescimento;
+    }
+    //SAÍDA
+    document.write(`A população prevista para o prazo de 5 anos é ${populacao5.toFixed(0)} habitantes.<br>`);
+    document.write(`A população prevista para o prazo de 10 anos é ${populacao10.toFixed(0)} habitantes.`);
     
-    //SAÍDA
-    document.write("Serão necessários " + contador + " anos para atinjir 200.000 habitantes.");
-
-    //SAÍDA
-
 </script>

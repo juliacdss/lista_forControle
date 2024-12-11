@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <script>
     /*
     PROBLEMA: INVESTIMENTOS
@@ -5,11 +6,16 @@
     */
 
     //ENTRADA
-
+    let investimento = 1000;
+    const renda = 1.02;
+    let dia;
 
     //PROCESSAMENTO
-
+    for (dia = 0; investimento < 2000; dia++) {
+        investimento *= renda;
+    }
 
     //SAÍDA
+    document.write(`Levará ${dia} dias para Joãozinho conseguir R$ 2.000,00.`);
 
 </script>

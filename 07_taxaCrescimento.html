@@ -6,10 +6,13 @@
     */
 
     //ENTRADA
-
+    let populacao = 80000;
+    const taxaCrescimento = 1.03;
+    const populacaoFinal = 200000;
+    
     //PROCESSAMENTO
-    for (contador = 0, populacao = 80000; populacao < 200000; contador++) {
-        populacao *= 1.03;
+    for (contador = 0; populacao < populacaoFinal; contador++) {
+        populacao *= taxaCrescimento;
     }
     
     //SAÍDA
