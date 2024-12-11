@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
-
+    let numeros = [];
+    let soma = 0;
 
     //PROCESSAMENTO
-
+    for (let contador = 0; contador < 5; contador++) {
+        const numero = Number(prompt(`Informe o número ${contador + 1}:`));
+        numeros.push(numero);
+    }
+    for (let sum = 0; sum < numeros.length; sum++) {
+        soma += numeros[sum];
+    }
+    let media = soma / numeros.length;
 
     //SAÍDA
+    document.write(`A soma final dos números é: ${soma}. <br> A média final dos números é: ${media}.`); 
 
 </script>
